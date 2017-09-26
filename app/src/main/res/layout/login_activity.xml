@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.example.broadcastbestpractice.MainActivity">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录名："/>
+
+        <EditText
+            android:id="@+id/accout"
+            android:layout_height="wrap_content"
+            android:hint="请输入登录名"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_span="2"/>
+    </TableRow>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/tip"
+            android:layout_width="40dp"
+            android:layout_height="28dp"
+            android:text="提示"
+            android:textSize="7sp"
+            tools:layout_editor_absoluteY="72dp"
+            tools:layout_editor_absoluteX="342dp"
+            tools:ignore="MissingConstraints"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</TableLayout>
